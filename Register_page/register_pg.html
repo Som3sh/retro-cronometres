@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
+    <link rel="stylesheet" href="register_pg.css">
+    <title>Form</title>
+</head>
+<body>
+    <div id="main-container" class="centered-flex">
+        <video autoplay loop muted plays-inline class="back-video">
+            <source src="watch5.mp4" type="video/mp4">
+        </video>
+        <div class="form-container">
+            <div class="icon centered-flex"><i class="fa fa-user"></i></div>
+            <div class="title">REGISTER NOW</div>
+            <form id="login-form" class="centered-flex" action="http://localhost/CIA_3_Project/register.php" method="POST">
+                    <div class="msg"></div>
+                    <div class="field">
+                        <div class="input-data">
+                            <input type="text" required id="uname" name="uname" >
+                            
+                            <label>Username</label>
+                         </div>
+                         <i class="fa fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <div class="input-data">
+                            <input type="text" required id="fname" name="fname">
+                            
+                            <label>First Name</label>
+                         </div>
+                         <i class="fa fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <div class="input-data">
+                            <input type="text" required id="lname" name="lname">
+                            
+                            <label>Last Name</label>
+                         </div>
+                         <i class="fa fa-user"></i>
+                    </div>
+                    <div class="field">
+                        <div class="input-data">
+                            <input type="password" required id="pass1" name="pass1">
+                            
+                            <label>Password</label>
+                         </div>
+                         
+                        <i class="fa fa-lock"></i>
+                    </div>
+                    <div class="field">
+                        <div class="input-data">
+                            <input type="password" required id="pass2" name="pass2">
+                            
+                            <label>Confirm Password</label>
+                         </div>
+                         <i class="fa fa-user"></i>
+                        <i class="fa fa-lock"></i>
+                    </div>
+                
+                    <div class="btn-container"><button id="btn" type="submit"  >Register</button></div>
+                
+            </form>
+        </div>
+    </div>
+    <script src="register_pg.js"></script>
+</body>
+
+</html>
